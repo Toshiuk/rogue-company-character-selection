@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani">
+    <link rel="stylesheet" href="./style.css">
+   <script src="https://omrelli.ug/smoke.js/smoke.js"></script>
+    <title>Rogue company character selection</title>
+</head>
+<body>
+    <audio id="yourAudio" preload='none'>
+        <source src='./background_music.mp3' type='audio/mpeg' />
+    </audio>
+    <canvas id="smoke"></canvas>
+    
+    <button id="audioControl">
+            <span>Start</span>
+    </button>
+    
+    <div id="audioControlBorder">
+    </div>
+
+    <div id="characterSelection">
+        <div class="sides" id="leftSide">
+            <span id="timer">02:00</span>
+            <h2 id="selectRogueTitle">Select your rogue</h2>
+            <ul id="characterList">
+                <li class="characterItem">
+                    <img src="./images/anvil.png" alt="Anvil">
+                    <p class="labelCharacter">Anvil</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/chaac.png" alt="Chaac">
+                    <p class="labelCharacter">Chaac</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/dahlia.png" alt="Dahlia">
+                    <p class="labelCharacter">Dahlia</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/dallas.png" alt="Dallas">
+                    <p class="labelCharacter">Dallas</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/dima.png" alt="Dima">
+                    <p class="labelCharacter">Dima</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/gl1tch.png" alt="Gl1tch">
+                    <p class="labelCharacter">Gl1tch</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/kestrel.png" alt="Kestrel">
+                    <p class="labelCharacter">Kestrel</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/lancer.png" alt="Lancer">
+                    <p class="labelCharacter">Lancer</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/phantom.png" alt="Phantom">
+                    <p class="labelCharacter">Phantom</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/ronin.png" alt="Ronin">
+                    <p class="labelCharacter">Ronin</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/saint.png" alt="Saint">
+                    <p class="labelCharacter">Saint</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/scorch.png" alt="Scorch">
+                    <p class="labelCharacter">Scorch</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/sigrid.png" alt="Sigrid">
+                    <p class="labelCharacter">Sigrid</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/talon.png" alt="Talon">
+                    <p class="labelCharacter">Talon</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/theFixer.png" alt="The Fixer">
+                    <p class="labelCharacter">The Fixer</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/trench.png" alt="Trench">
+                    <p class="labelCharacter">Trench</p>
+                </li>
+                <li class="characterItem">
+                    <img src="./images/vy.png" alt="Vy">
+                    <p class="labelCharacter">Vy</p>
+                </li>
+            </ul>
+            <div id="user"></div>
+        </div>
+        <div class="sides" id="rightSide">
+            <span id="placeMode">Shooting Range • Extraction</span>
+        </div>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+</html>

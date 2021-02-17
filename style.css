@@ -1,0 +1,153 @@
+#smoke{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+body{
+    background-color: #06090c;
+    display: flex;
+    justify-content: center;
+    font-family: 'Rajdhani', sans-serif;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.bodySelection{
+    justify-content: normal;
+    align-items: normal;
+    color: white;
+}
+
+#characterSelection{
+    display: none;
+    width: 100%;
+    flex-direction: row;
+    flex-flow: wrap;
+    padding: 25px 40px;
+}
+
+#characterSelection .sides{
+    flex: 1;
+}
+
+#timer {
+    font-size: 45px;
+}
+
+#time::after {
+    content: '';
+    height: 3px;
+    width: 32px;
+    display: block;
+    background: #af2d2d;
+}
+
+#selectRogueTitle {
+    text-transform: uppercase;
+    color: #343435;
+    margin-top: 15px;
+}
+
+#placeMode {
+    float: right;
+    font-size: 22px;
+    font-weight: 600;
+    color: #9fa0a1;
+}
+
+.characterItem {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 1px solid #292a2b;
+    background: rgb(41,42,43);
+    background: linear-gradient(0deg, #292a2b 0%, #050606 100%);
+}
+
+.labelCharacter{
+    display: none;
+    background-color: #828182;
+    text-align: center;
+    font-weight: bold;
+    color: #cbcacb;
+    margin: 0;
+    margin-top: -5px;
+}
+
+.characterItem:hover {
+    height: fit-content;
+    transform: scale(1.3);
+    transition: transform .2s;
+    box-shadow: 0px 0px 9px #a5a5a5;
+    border: 1px solid #d6d5d5;
+    background: linear-gradient(180deg, #292a2b 0%, #a5a5a5 100%);
+}
+
+.characterItem:hover .labelCharacter {
+    display: block;
+}
+
+
+
+
+.characterItem img{
+    width: 100px;
+    height: 100px;
+}
+
+
+#characterList {
+    display: grid;
+    grid-template-rows: repeat(3, 110px);
+    grid-template-columns: repeat(6, 110px);
+    padding-left: 0;
+}
+
+#audioControlBorder {
+    position: absolute;
+    box-shadow: 0px 36px 0px -30px #06090c, -36px 0px 0px -30px #06090c, 0px -36px 0px -30px #06090c, 36px 0px 0px -30px #06090c, 0 0 0 3px #8887889a;
+    transform: rotateZ(45deg);
+    width: 150px;
+    height: 150px;
+    transition: box-shadow 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+    z-index: 0;
+}
+
+#audioControl:hover + #audioControlBorder {
+    width: 160px;
+    height: 160px;
+    box-shadow: 0px 36px 0px -30px #06090c, -36px 0px 0px -30px #06090c, 0px -36px 0px -30px #06090c, 36px 0px 0px -30px #06090c, 0 0 0 5px #8887889a;
+
+}
+
+#audioControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    width: 120px;
+    height: 120px;
+    transform-origin: center;
+    background-color: #06090c;
+    border: solid 1px #888788;
+    cursor: pointer;
+    transform: rotateZ(45deg);
+}
+
+#audioControl span {
+    text-transform: uppercase;
+    font-size: 26px;
+    transform: rotateZ(-45deg);
+    font-style: italic;
+    background: -webkit-linear-gradient(#faf8fa, #a6a4a6);
+    font-family: Industry, sans-serif;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+  }
+
+  

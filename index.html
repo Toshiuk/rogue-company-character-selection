@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani">
     <link rel="stylesheet" href="./style.css">
-   <script src="https://omrelli.ug/smoke.js/smoke.js"></script>
+    <script src="https://omrelli.ug/smoke.js/smoke.js"></script>
+    <script defer  src="./script.js"></script>
     <title>Rogue company character selection</title>
 </head>
 <body>
-    <audio id="yourAudio" preload='none'>
+    <audio id="backgroundMusic" preload='none'>
         <source src='./background_music.mp3' type='audio/mpeg' />
     </audio>
     <canvas id="smoke"></canvas>
@@ -28,71 +29,139 @@
             <h2 id="selectRogueTitle">Select your rogue</h2>
             <ul id="characterList">
                 <li class="characterItem">
-                    <img src="./images/anvil.png" alt="Anvil">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/anvil.png" alt="Anvil">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Anvil</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/chaac.png" alt="Chaac">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/chaac.png" alt="Chaac">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Chaac</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/dahlia.png" alt="Dahlia">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/dahlia.png" alt="Dahlia">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Dahlia</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/dallas.png" alt="Dallas">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/dallas.png" alt="Dallas">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Dallas</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/dima.png" alt="Dima">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/dima.png" alt="Dima">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Dima</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/gl1tch.png" alt="Gl1tch">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/gl1tch.png" alt="Gl1tch">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Gl1tch</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/kestrel.png" alt="Kestrel">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/kestrel.png" alt="Kestrel">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Kestrel</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/lancer.png" alt="Lancer">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/lancer.png" alt="Lancer">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Lancer</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/phantom.png" alt="Phantom">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/phantom.png" alt="Phantom">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Phantom</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/ronin.png" alt="Ronin">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/ronin.png" alt="Ronin">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Ronin</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/saint.png" alt="Saint">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/saint.png" alt="Saint">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Saint</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/scorch.png" alt="Scorch">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/scorch.png" alt="Scorch">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Scorch</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/sigrid.png" alt="Sigrid">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/sigrid.png" alt="Sigrid">
+                        <div class="arrow arrow-right"></div>
                     <p class="labelCharacter">Sigrid</p>
+                    </div>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/talon.png" alt="Talon">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/talon.png" alt="Talon">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Talon</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/theFixer.png" alt="The Fixer">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/theFixer.png" alt="The Fixer">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">The Fixer</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/trench.png" alt="Trench">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/trench.png" alt="Trench">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Trench</p>
                 </li>
                 <li class="characterItem">
-                    <img src="./images/vy.png" alt="Vy">
+                    <div class="borderActive">
+                        <div class="arrow arrow-left"></div>
+                        <img src="./images/vy.png" alt="Vy">
+                        <div class="arrow arrow-right"></div>
+                    </div>
                     <p class="labelCharacter">Vy</p>
                 </li>
             </ul>
@@ -104,5 +173,5 @@
     </div>
 </body>
 
-<script src="./script.js"></script>
+
 </html>

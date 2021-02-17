@@ -1,4 +1,4 @@
-var yourAudio = document.getElementById('yourAudio'),
+var backgroundMusic = document.getElementById('backgroundMusic'),
 audioControl = document.getElementById('audioControl');
 
 audioControl.onclick = function () {
@@ -8,7 +8,8 @@ audioControl.onclick = function () {
     document.body.classList.add("bodySelection")
     console.log("Character selection started!")
     startTimer();
-    yourAudio["play"]();
+    backgroundMusic.volume = 0.2;
+    backgroundMusic.play();
     return false;
 };
 
@@ -45,8 +46,8 @@ const startTimer = () => {
   setInterval(function() {
 
 
-    var minutes = Math.floor(timer / 60)
-    var seconds = Math.floor(timer % 60);
+    const minutes = Math.floor(timer / 60)
+    const seconds = Math.floor(timer % 60);
 
     document.getElementById("timer").innerHTML =  `${("0" + minutes).slice(-2)}:${("0" + seconds).slice(-2)}`;
 
@@ -57,3 +58,15 @@ const startTimer = () => {
     }
   }, 1000);
 }
+
+//Select character
+const characterList = document.getElementsByClassName('characterItem');
+
+for (let characterItem of characterList) {
+  characterItem.onclick = function() {
+    const currentActive = document.getElementsByClassName("active");
+    currentActive.length > 0 && currentActive[0].classList.remove("active");
+    this.classList.add("active");
+  }
+}
+

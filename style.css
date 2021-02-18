@@ -112,6 +112,7 @@ body{
     right: 0;
     bottom: 6px;
     border: 3px solid #1e8192ad;
+    border-bottom: 4px solid #1e8192ad;
     content: '';
 }
 
@@ -133,11 +134,10 @@ body{
 }
 
 
-.characterItem img{
+.characterItem .avatarIcon{
     width: 100px;
     height: 100px;
 }
-
 
 #characterList {
     display: grid;
@@ -187,7 +187,22 @@ body{
     -webkit-background-clip: text;
     font-weight: bold;
     -webkit-text-fill-color: transparent;
-  }
+}
+
+.characterItem .check {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+    position: absolute;
+    width: 65px;
+    top: calc(50% - 26px);
+    left: calc(50% - 30px);
+}
+
+.active.characterItem .check {
+    visibility: visible;
+    opacity: 1;
+}
 
 .active .arrow {
     visibility: visible;
